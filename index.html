@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    
+    <style>
+        /* Universal Reset: Poori window ki default margin/padding hatane ke liye */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling: Card ko screen ke bilkul center mein lane ke liye */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Profile Card Layout */
+        .profile-card {
+            background-color: #ffffff; /* Card ka white background */
+            width: 350px;
+            padding: 30px; /* Card ke andar ka space */
+            margin: 20px; /* Card ke baahar ka space */
+            border-radius: 16px; /* Smooth rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Floating look dene ke liye shadow */
+            text-align: center;
+            border: 1px solid #e0e0e0; /* Light border line */
+        }
+
+        /* Profile Image Styling */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Image ko perfectly round/circular banane ke liye */
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #4f46e5; /* Image ke baahar attractive purple border */
+        }
+
+        /* Text and Typography Styling */
+        .profile-name {
+            font-size: 24px;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .profile-title {
+            font-size: 14px;
+            color: #4f46e5; /* Accent color matching the border */
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Button Link Styling */
+        .profile-btn {
+            display: inline-block; /* Link ko button jaisa block banane ke liye */
+            text-decoration: none; /* Link ke neeche ki underline hatane ke liye */
+            background-color: #4f46e5;
+            color: white;
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 25px; /* Pill-shaped button */
+            transition: background-color 0.3s ease; /* Hover smooth karne ke liye */
+        }
+
+        /* Button Hover Effect */
+        .profile-btn:hover {
+            background-color: #3730a3; /* Hover karne par dark color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+        
+        <h2 class="profile-name">GOURAV</h2>
+        <p class="profile-title">SOFTWARE DEVELOPER</p>
+        <p class="profile-bio">Software is a set of digital instructions that tells computer hardware exactly what to do. Without it, a device is useless. You can easily divide all software into two main types: System Software and Application Software</p>
+        
+        <a href="https://students.optimizelabs.io/register" target="_blank" class="profile-btn">Connect</a>
+    </div>
+
+</body>
+</html>
